@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My stanza</title>
+    <link rel="stylesheet" href="./-togostanza/app.css" />
+
+    <script type="module" src="./my_stanza.js" async></script>
+
+    <script type="module">
+      import createHelpApp from './-togostanza/help-app.js';
+
+      const metadata = {"@context":{"stanza":"http://togostanza.org/resource/stanza#"},"@id":"my_stanza","stanza:label":"My stanza","stanza:definition":"my stanza","stanza:parameter":[{"stanza:key":"say-to","stanza:example":"world","stanza:description":"who to say hello to","stanza:required":false}],"stanza:about-link-placement":"bottom-right","stanza:style":[],"stanza:usage":"<togostanza-my_stanza></togostanza-my_stanza>","stanza:type":"Stanza","stanza:context":"","stanza:display":"Text","stanza:provider":"DBCLS","stanza:license":"MIT","stanza:author":"Shuichi Kawashima","stanza:address":"shuichi.kawashima@gmail.com","stanza:contributor":[],"stanza:created":"2020-09-09","stanza:updated":"2020-09-09"};
+
+      createHelpApp(metadata).mount('body');
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
